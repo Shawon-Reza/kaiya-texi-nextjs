@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { landingNavItems } from "@/data/landing-nav";
-import { ModeToggle } from "@/components/theme-toggle-button";
 
 export function LandingNavbar() {
   return (
@@ -33,7 +32,6 @@ export function LandingNavbar() {
         </nav>
         
         <div className="flex items-center gap-4">
-          <ModeToggle />
           <Link
             href="#bookings"
             className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-zinc-700"

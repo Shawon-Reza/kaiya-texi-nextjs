@@ -1,5 +1,7 @@
 import FAQSection from "@/components/landing/FAQSection";
 import { LandingNavbar } from "@/components/landing/navbar";
+import Reviews from "@/components/landing/Reviews";
+import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   return (
@@ -25,7 +27,10 @@ export default function Home() {
 
       </main>
 
+      <Reviews />
       <FAQSection />
+      <Footer />
+
     </div>
   );
 }
