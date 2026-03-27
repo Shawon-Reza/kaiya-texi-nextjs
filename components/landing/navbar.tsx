@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { landingNavItems } from "@/data/landing-nav";
+import { ModeToggle } from "@/components/theme-toggle-button";
 
 export function LandingNavbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 dark:bg-amber-500 backdrop-blur-md">
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <div className="grid h-10 w-10 place-items-center rounded-lg bg-black text-white">
@@ -30,13 +31,16 @@ export function LandingNavbar() {
             ))}
           </ul>
         </nav>
-
-        <Link
-          href="#bookings"
-          className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-zinc-700"
-        >
-          Book Now
-        </Link>
+        
+        <div className="flex items-center gap-4">
+          <ModeToggle />
+          <Link
+            href="#bookings"
+            className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-zinc-700"
+          >
+            Book Now
+          </Link>
+        </div>
       </div>
     </header>
   );
