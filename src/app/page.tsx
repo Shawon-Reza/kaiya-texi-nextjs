@@ -1,10 +1,12 @@
 import FAQSection from "@/components/landing/FAQSection";
 import Footer from "@/components/landing/Footer";
+import HowItWorks from "@/components/landing/HowItWorks";
 import JoinNow from "@/components/landing/JoinNow";
 import ContactUsPage from "@/components/landing/ContactUsPage";
 import { LandingNavbar } from "@/components/landing/navbar";
 import PopularDestination from "@/components/landing/PopularDestination";
 import Reviews from "@/components/landing/Reviews";
+import Services from "@/components/landing/Services";
 import TheKaiyaStandard from "@/components/landing/TheKaiyaStandard";
 
 export default function Home() {
@@ -32,11 +34,14 @@ export default function Home() {
       </main>
 
       <Reviews />
+      <HowItWorks />
+      <Services />
       <TheKaiyaStandard />
       <PopularDestination />
       <FAQSection />
-      <JoinNow />
+      
       <ContactUsPage />
+      <JoinNow />
       <Footer />
 
     </div>
