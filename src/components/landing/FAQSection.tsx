@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "..
 
 const FAQSection = () => {
     return (
-        <section id="faq" className="scroll-mt-28 border-b border-zinc-200 bg-zinc-50 py-12 dark:border-zinc-700 dark:bg-zinc-950 sm:py-16 md:py-20 lg:py-28">
+        <section id="faq" className="scroll-mt-28   py-12 dark:border-zinc-700 dark:bg-zinc-950 sm:py-16 md:py-20 lg:py-28">
             <div className="mx-auto w-full px-3 sm:px-4 md:px-6 lg:px-8" style={{ maxWidth: '100%' }}>
                 <div className="mx-auto max-w-7xl">
                     <h2 className="text-center text-2xl font-bold text-zinc-900 dark:text-zinc-100 sm:text-3xl md:text-4xl lg:text-5xl">

@@ -1,5 +1,6 @@
 import FAQSection from "@/components/landing/FAQSection";
 import Footer from "@/components/landing/Footer";
+import HeroSection from "@/components/landing/HeroSection";
 import HowItWorks from "@/components/landing/HowItWorks";
 import JoinNow from "@/components/landing/JoinNow";
 import ContactUsPage from "@/components/landing/ContactUsPage";
@@ -8,41 +9,58 @@ import PopularDestination from "@/components/landing/PopularDestination";
 import Reviews from "@/components/landing/Reviews";
 import Services from "@/components/landing/Services";
 import TheKaiyaStandard from "@/components/landing/TheKaiyaStandard";
+import ServicesPage2 from "@/components/landing/ServicesPage2";
 
 export default function Home() {
   return (
-    <div className="min-h-screen  bg-zinc-50 text-zinc-900">
-      <LandingNavbar />
-
-      <main>
-        <section id="home" className="scroll-mt-28 py-24 sm:py-28">
-          <div className="mx-auto w-full  px-4 sm:px-6 lg:px-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.15em] text-zinc-500">
-              Fast. Safe. Always Available.
-            </p>
-            <h1 className="mt-4 max-w-2xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">
-              Book your next ride with Kaiya Taxi.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg text-zinc-600">
-              Reliable city rides, airport transfers, and scheduled pickups with
-              transparent pricing and 24/7 support.
-            </p>
-          </div>
-        </section>
+    <div className="bg-zinc-50 text-zinc-900">
 
 
-      </main>
+      <section><LandingNavbar /></section>
+      <section><HeroSection /></section>
+      <section><HowItWorks /></section>
 
-      <Reviews />
-      <HowItWorks />
-      <Services />
+      <section className="px-1 md:px-3 lg:px-5 xl:px-7">
+        <Services />
+      </section>
+      <section className="  px-1 sm:px-3 md:px-4 lg:px-5 xl:px-10">
+        <ServicesPage2 />
+      </section>
+
+      <section>
+        <TheKaiyaStandard />
+      </section>
+      <section>
+        <PopularDestination />
+      </section>
+      <section>
+        <Reviews />
+      </section>
+      <section>
+        <FAQSection />
+      </section>
+      <section>
+        <ContactUsPage />
+      </section>
+      <section>
+        <JoinNow />
+      </section>
+      <section>
+        <Footer />
+      </section>
+
+
+
+
+
+      {/*         
       <TheKaiyaStandard />
       <PopularDestination />
+      <Reviews />
       <FAQSection />
-      
       <ContactUsPage />
       <JoinNow />
-      <Footer />
+      <Footer /> */}
 
     </div>
   );

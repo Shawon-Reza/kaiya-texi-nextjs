@@ -3,7 +3,7 @@ import { popularDestinations } from '@/data/popular-destinations';
 
 const PopularDestination = () => {
   return (
-    <section className="bg-zinc-100 py-16 sm:py-20 lg:py-24 dark:bg-zinc-950" id="destinations">
+    <section className="py-6 sm:py-8 lg:py-10 dark:bg-zinc-950" id="destinations">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 text-center sm:mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-100">

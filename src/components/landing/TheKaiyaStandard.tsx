@@ -3,7 +3,7 @@ import { kaiyaStandardItems } from '@/data/kaiya-standard';
 
 const TheKaiyaStandard = () => {
     return (
-        <section className="bg-zinc-100 py-16 sm:py-20 lg:py-24 dark:bg-zinc-950" id="kaiya-standard">
+        <section className=" py-10 sm:py-12 lg:py-18 dark:bg-zinc-950" id="kaiya-standard">
             <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
                 <header className="text-center">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">

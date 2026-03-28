@@ -140,7 +140,7 @@ const Reviews = () => {
     return (
         <section
             id="reviews"
-            className="border-b border-zinc-200 bg-zinc-100 py-14 dark:border-zinc-800 dark:bg-zinc-950 sm:py-16 lg:py-20"
+            className=" border-zinc-200 bg-zinc-100 py-14 dark:border-zinc-800 dark:bg-zinc-950 sm:py-16 lg:py-20"
         >
             <div className="mx-auto w-full  px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
