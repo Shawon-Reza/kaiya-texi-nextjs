@@ -10,7 +10,8 @@
   --color-foreground: var(--foreground);
 
 }
-@custom-variant dark (&:where(.dark, .dark *)); 
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,9 +23,25 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  top: 0px !important;  /*  For Remove the watermark / google translation pop avobe the website */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+
+/* ------------- For Remove the watermark / google translation pop avobe the website------------------- */
+
+.skiptranslate {
+  display: none;
+}
+
+/* Hide Google Translate floating shortcut/icon injected by the external script. */
+.goog-te-gadget-icon,
+.goog-logo-link,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO,
+.goog-te-spinner-pos {
+  display: none !important;
+}

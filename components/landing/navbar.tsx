@@ -4,9 +4,9 @@ import { landingNavItems } from "@/data/landing-nav";
 export function LandingNavbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 dark:bg-amber-500 backdrop-blur-md">
-      <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-lg bg-black text-white">
+          <div className="grid h-10 w-10 place-items-center rounded-lg bg-black  text-white">
             <span aria-hidden className="text-xs font-bold tracking-wide">
               KT
             </span>

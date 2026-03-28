@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { ModeToggle } from "@/components/theme-toggle-button";
+import LanguageSwitcher from "@/components/language-switcher";
 
 const quickLinks = [
     { label: "Services", href: "#services" },
@@ -101,6 +102,7 @@ const Footer = () => {
                             <section className="text-black">
                                 <ModeToggle />
                             </section>
+                            <LanguageSwitcher />
                         </div>
                     </div>
                 </div>
