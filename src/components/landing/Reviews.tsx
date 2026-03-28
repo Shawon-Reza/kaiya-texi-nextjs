@@ -12,7 +12,7 @@ import {
     AvatarGroup,
     AvatarGroupCount,
     AvatarImage,
-} from "@/components/ui/avatar";
+} from "../ui/avatar";
 
 type Review = {
     id: number;

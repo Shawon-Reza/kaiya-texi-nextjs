@@ -1,5 +1,6 @@
-import Link from "next/link";
+
 import { landingNavItems } from "@/data/landing-nav";
+import Link from "next/link";
 
 export function LandingNavbar() {
   return (

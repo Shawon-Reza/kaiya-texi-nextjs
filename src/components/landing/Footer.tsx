@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import { ModeToggle } from "@/components/theme-toggle-button";
-import LanguageSwitcher from "@/components/language-switcher";
+import { ModeToggle } from "../common/theme-toggle-button";
+import LanguageSwitcher from "../common/language-switcher";
+
+
 
 const quickLinks = [
     { label: "Services", href: "#services" },
@@ -21,7 +23,7 @@ const socialLinks = [
 const Footer = () => {
     return (
         <footer className="border-t border-zinc-800 bg-black text-zinc-100">
-            <div className="mx-auto w-full  px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <div className="mx-auto w-full  px-4 py-12 sm:px-6 lg:px-8 lg:py-12">
                 <div className="grid gap-10 justify-center md:grid-cols-2 lg:grid-cols-3 lg:gap-14">
                     <div>
                         <div className="flex items-center gap-3">
