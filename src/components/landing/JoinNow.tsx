@@ -24,10 +24,10 @@ export default function JoinNow() {
             <Button
               asChild
               size="lg"
-              className="bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 text-white font-semibold rounded-full px-8 py-6 text-base transition-colors"
+              className="bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 text-white font-semibold rounded-full px-8 py-6 text-base     hover:shadow-2xl hover:scale-105 transition-all duration-700"
             >
               <Link href="/join-driver">
-                Join Now <span className="ml-2">→</span>
+                Join Now <span className="ml-2 ">→</span>
               </Link>
             </Button>
 
@@ -35,7 +35,7 @@ export default function JoinNow() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white dark:border-zinc-300 dark:text-zinc-300 dark:hover:bg-zinc-300 dark:hover:text-zinc-900 font-semibold rounded-full px-8 py-6 text-base transition-colors"
+              className="border-2 border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white dark:border-zinc-300 dark:text-zinc-300 dark:hover:bg-zinc-300 dark:hover:text-zinc-900 font-semibold rounded-full px-8 py-6 text-base     hover:shadow-2xl hover:scale-105 transition-all duration-700"
             >
               <Link href="#learn-more">
                 Learn More

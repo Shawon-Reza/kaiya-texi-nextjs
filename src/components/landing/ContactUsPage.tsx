@@ -5,10 +5,12 @@ import ContactForm from './ContactForm';
 
 export default function ContactUsPage() {
   return (
-    <section className="w-full bg-white dark:bg-zinc-950 py-10 md:py-16 lg:py-20">
+    <section
+      id='contact'
+      className="w-full ">
       <div className=" mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-5  md:mb-16">
           <p className="text-sm font-semibold uppercase tracking-[0.15em] text-zinc-500 dark:text-zinc-400 mb-4">
             Contact Us
           </p>
@@ -18,7 +20,7 @@ export default function ContactUsPage() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 justc md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 justc md:grid-cols-2 gap-8 md:gap-12 lg:gap-16  items-center">
           {/* Left Column - Contact Info */}
           <div className="flex flex-col justify-start">
             <ContactInfo />

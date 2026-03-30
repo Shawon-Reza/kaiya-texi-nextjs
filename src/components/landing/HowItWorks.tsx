@@ -14,7 +14,7 @@ export default function HowItWorks() {
                     </h2>
                 </header>
 
-                <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
+                <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3 max-w-7xl mx-auto">
                     {howItWorksSteps.map((step) => (
                         <HowItWorksStepCard key={step.id} step={step} />
                     ))}
