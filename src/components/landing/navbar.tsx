@@ -8,9 +8,11 @@ export function LandingNavbar() {
       <div className="mx-auto flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <div className="grid h-10 w-10 place-items-center rounded-lg bg-black  text-white">
+
             <span aria-hidden className="text-xs font-bold tracking-wide">
               KT
             </span>
+            
           </div>
           <span className="text-lg font-extrabold tracking-tight text-zinc-900">
             KAIYA TAXI

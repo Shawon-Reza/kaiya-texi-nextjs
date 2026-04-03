@@ -5,12 +5,12 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import JoinNow from "@/components/landing/JoinNow";
 import ContactUsPage from "@/components/landing/ContactUsPage";
 import { LandingNavbar } from "@/components/landing/navbar";
-import PopularDestination from "@/components/landing/PopularDestination";
 import Reviews from "@/components/landing/Reviews";
 import Services from "@/components/landing/Services";
 import TheKaiyaStandard from "@/components/landing/TheKaiyaStandard";
 import ServicesPage2 from "@/components/landing/ServicesPage2";
 import GlobalCoverage from "@/components/landing/GlobalCoverage";
+import PopularDestination from "@/components/landing/PopularDestination";
 
 export default function Home() {
   return (
