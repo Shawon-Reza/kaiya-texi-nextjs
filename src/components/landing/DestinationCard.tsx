@@ -1,6 +1,13 @@
 import { Star } from 'lucide-react';
 
-const DestinationCard = ({ destination }) => {
+interface Destination {
+  imageUrl: string;
+  route: string;
+  rating: number;
+  description: string;
+}
+
+const DestinationCard = ({ destination }: { destination: Destination }) => {
   return (
     <article className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
       <div className="h-48 w-full overflow-hidden sm:h-56">

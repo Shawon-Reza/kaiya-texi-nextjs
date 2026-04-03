@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function LandingNavbar() {
   return (
-    <header className="sticky top-0 z-40   backdrop-blur-md">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-200/70 bg-white/70 backdrop-blur-md dark:border-zinc-700 dark:bg-zinc-900/80">
       <div className="mx-auto flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <div className="grid h-10 w-10 place-items-center rounded-lg bg-black  text-white">

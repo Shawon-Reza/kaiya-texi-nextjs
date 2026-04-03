@@ -1,8 +1,8 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button'; 
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 interface FormData {
   name: string;
@@ -44,14 +44,14 @@ export default function ContactForm() {
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
       setIsSuccess(true);
-      
+
       // Clear success state after 3 seconds
       setTimeout(() => setIsSuccess(false), 3000);
-    }, 1500); 
+    }, 1500);
   };
 
   // Ultra-smooth Framer Motion Physics
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -62,24 +62,24 @@ export default function ContactForm() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
-    show: { 
-      opacity: 1, 
-      y: 0, 
+    show: {
+      opacity: 1,
+      y: 0,
       scale: 1,
-      transition: { 
-        type: 'spring', 
+      transition: {
+        type: 'spring',
         stiffness: 60,   // Lowered for a much silkier slide
         damping: 12,     // Adjusted for less sudden snapping
         mass: 0.8
-      } 
+      }
     },
   };
 
   return (
-    <motion.form 
-      onSubmit={handleSubmit} 
+    <motion.form
+      onSubmit={handleSubmit}
       className="space-y-5 md:space-y-6"
       variants={containerVariants}
       initial="hidden"
@@ -166,9 +166,9 @@ export default function ContactForm() {
       </motion.div>
 
       {/* Submit Button */}
-      <motion.div 
-        variants={itemVariants} 
-        whileHover={{ scale: 1.02, y: -2 }} 
+      <motion.div
+        variants={itemVariants}
+        whileHover={{ scale: 1.02, y: -2 }}
         whileTap={{ scale: 0.98, y: 0 }}
         className="pt-4"
       >
