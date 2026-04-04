@@ -27,7 +27,7 @@ export default function KaiyaStandardItemCard({ item }: KaiyaStandardItemCardPro
   const Icon = iconMap[item.icon];
 
   return (
-    <article className="rounded-xl border border-transparent p-1 transition-colors hover:border-zinc-200 dark:hover:border-zinc-800">
+    <article className="rounded-xl border border-transparent p-4 transform transition-all duration-1000 hover:scale-105 hover:border-zinc-200 dark:hover:border-zinc-800">
       <Icon className="h-5 w-5 text-zinc-900 dark:text-zinc-100" aria-hidden="true" />
       <h3 className="mt-3 text-2xl font-semibold leading-tight text-zinc-900 dark:text-zinc-100 sm:text-xl">
         {item.title}

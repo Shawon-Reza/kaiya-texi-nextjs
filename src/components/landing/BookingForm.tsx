@@ -46,7 +46,7 @@ export default function BookingForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-3xl bg-white p-6 shadow-xl sm:p-8 dark:bg-zinc-900"
+      className="rounded-3xl bg-white p-6 shadow-xl sm:p-8 dark:bg-zinc-900 z-50"
     >
       {/* Tabs */}
       <div className="mb-6 flex flex-wrap items-center gap-3 border-b border-zinc-200 pb-4 dark:border-zinc-800 sm:gap-4">

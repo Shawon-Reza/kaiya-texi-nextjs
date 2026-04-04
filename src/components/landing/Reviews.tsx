@@ -83,7 +83,8 @@ const extraAvatarCount = Math.max(reviews.length - featuredAvatars.length, 0);
 
 function ReviewCard({ review }: { review: Review }) {
     return (
-        <article className="flex h-full min-h-[250px] flex-col rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-700 dark:bg-zinc-900">
+        <article className="flex h-full min-h-[250px] flex-col rounded-2xl border border-zinc-200 bg-white p-5
+         dark:border-zinc-700 dark:bg-zinc-900  transform transition-all duration-1000 hover:scale-102 hover:border-zinc-200 dark:hover:border-zinc-700">
             <div
                 className="flex items-center gap-1"
                 aria-label={`${review.star} out of 5 stars`}
@@ -182,7 +183,7 @@ const Reviews = () => {
                         {reviews.map((review) => (
                             <CarouselItem
                                 key={review.id}
-                                className="basis-full sm:basis-1/2 lg:basis-1/3"
+                                className="basis-full sm:basis-1/2 lg:basis-1/3 py-1"
                             >
                                 <ReviewCard review={review} />
                             </CarouselItem>

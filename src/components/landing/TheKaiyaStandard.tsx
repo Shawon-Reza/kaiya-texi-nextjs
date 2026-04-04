@@ -1,5 +1,6 @@
 import KaiyaStandardItemCard from '@/components/landing/KaiyaStandardItemCard';
 import { kaiyaStandardItems } from '@/data/kaiya-standard';
+import { Highlighter } from '../ui/highlighter';
 
 const TheKaiyaStandard = () => {
     return (
@@ -10,8 +11,20 @@ const TheKaiyaStandard = () => {
                         Why Travelers Trust Kiaya
                     </p>
                     <h2 className="mt-3 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-5xl">
-                        The Kiaya Standard
+                        The
+                        {" "} <Highlighter action="highlight" color="#FF9800" isView>
+                            Kiaya
+                        </Highlighter>{" "}
+                        Standard
+                        {/* "highlight" | "circle" | "box" | "bracket" | "crossed-off" | "strike-through" | "underline" */}
+
                     </h2>
+
+
+
+
+
+
                 </header>
 
                 <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-y-12">

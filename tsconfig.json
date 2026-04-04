@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/components/ui/TiltedCard.jsx"  ],
+, "src/components/ui/TiltedCard.jsx", "src/components/ui/TextType.jsx", "src/components/ui/TextType.jsx"  ],
   "exclude": ["node_modules"]
 }

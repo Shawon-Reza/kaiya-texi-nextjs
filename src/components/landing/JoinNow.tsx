@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import TextType from '@/components/ui/TextType';
 
 export default function JoinNow() {
   return (
@@ -9,13 +10,29 @@ export default function JoinNow() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-6 md:space-y-8">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white max-w-2xl">
+          {/* <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white max-w-2xl">
             Drive with Kiaya Taxi
-          </h2>
+          </h2> */}
+
+          <TextType
+            className='text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white max-w-2xl'
+            text={[
+              'Drive with Kaiya Taxi',
+              'Instant booking, zero hassle',
+            ]}
+            typingSpeed={75}
+            pauseDuration={5000}
+            showCursor
+            cursorCharacter="_"
+            deletingSpeed={50}
+            variableSpeed={false}
+            cursorBlinkDuration={0.5}
+            onSentenceComplete={() => {}}
+          />
 
           {/* Description */}
           <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-300 max-w-2xl leading-relaxed">
-            Join our network of professional drivers and earn on your own schedule. We're looking for experienced, 
+            Join our network of professional drivers and earn on your own schedule. We're looking for experienced,
             reliable drivers who are passionate about providing excellent service to travelers.
           </p>
 

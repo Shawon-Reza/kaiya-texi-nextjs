@@ -8,7 +8,7 @@ export default function HowItWorksStepCard({ step }: HowItWorksStepCardProps) {
   const Icon = step.icon;
 
   return (
-    <article className="flex flex-col items-center text-center">
+    <article className="flex flex-col items-center text-center  border border-transparent rounded-2xl p-4 hover:shadow-xl shadow-md transform transition-all duration-1000 hover:scale-105 hover:border-zinc-200 dark:hover:border-zinc-800">
       <div className="flex items-center justify-center rounded-full bg-[#F5F5F5] p-4 dark:bg-zinc-900">
         <Icon size={28} className="text-zinc-900 dark:text-zinc-100" aria-hidden="true" />
       </div>

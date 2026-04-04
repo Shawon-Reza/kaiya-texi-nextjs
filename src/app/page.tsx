@@ -17,7 +17,9 @@ export default function Home() {
     <div className="bg-zinc-50 text-zinc-900 pt-20">
       <LandingNavbar />
       <section><HeroSection /></section>
-      <section><HowItWorks /></section>
+      <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
+        <HowItWorks />
+      </section>
 
       <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
         <Services />
