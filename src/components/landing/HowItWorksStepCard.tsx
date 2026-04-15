@@ -19,6 +19,6 @@ export default function HowItWorksStepCard({ step }: HowItWorksStepCardProps) {
       <p className="mt-2 text-sm xl:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-sm">
         {step.description}
       </p>
-    </article>
+    </article> 
   );
 }

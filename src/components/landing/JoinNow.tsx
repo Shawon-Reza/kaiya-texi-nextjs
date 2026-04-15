@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import TextType from '@/components/ui/TextType';
+import { FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 
 export default function JoinNow() {
   return (
@@ -17,6 +18,7 @@ export default function JoinNow() {
           <TextType
             className='text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white max-w-2xl'
             text={[
+              'Book Faster on the App',
               'Drive with Kaiya Taxi',
               'Instant booking, zero hassle',
             ]}
@@ -27,7 +29,7 @@ export default function JoinNow() {
             deletingSpeed={50}
             variableSpeed={false}
             cursorBlinkDuration={0.5}
-            onSentenceComplete={() => {}}
+            onSentenceComplete={() => { }}
           />
 
           {/* Description */}
@@ -37,7 +39,7 @@ export default function JoinNow() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4">
             <Button
               asChild
               size="lg"
@@ -58,7 +60,46 @@ export default function JoinNow() {
                 Learn More
               </Link>
             </Button>
+          </div> */}
+
+          {/*==================== Downloads buttons ==================== */}
+          <div className="flex w-full flex-col sm:flex-row items-center justify-center gap-3 pt-">
+            <Link
+              href="#"
+              className="inline-flex   items-center justify-center gap-3 rounded-3xl border border-zinc-300 bg-zinc-200/80 px-4 md:px-6 py-2 md:py-3 text-2xl font-semibold text-zinc-900  hover:bg-zinc-300 transform transition-all duration-700 hover:shadow-lg hover:-translate-y-1"
+              aria-label="Get on Play Store"
+            >
+              <FaGooglePlay size={20} className="text-blue-500" aria-hidden="true" />
+              <span className="text-sm md:text-lg">Get on playstore</span>
+            </Link>
+
+            <Link
+              href="#"
+              className="inline-flex   items-center justify-center gap-3 rounded-3xl border border-zinc-300 bg-zinc-200/80 px-4 md:px-6 py-2 md:py-3 text-2xl font-semibold text-zinc-900  hover:bg-zinc-300 transform transition-all duration-700 hover:shadow-lg hover:-translate-y-1"
+              aria-label="Get on Play Store"
+            >
+              <FaAppStoreIos size={20} className=" text-sky-500" aria-hidden="true" />
+              <span className="text-sm md:text-lg">Get on playstore</span>
+            </Link>
+
+
+
+
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section>

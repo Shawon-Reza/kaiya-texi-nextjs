@@ -1,6 +1,7 @@
 import KaiyaStandardItemCard from '@/components/landing/KaiyaStandardItemCard';
 import { kaiyaStandardItems } from '@/data/kaiya-standard';
 import { Highlighter } from '../ui/highlighter';
+import CarStandard from './CarStandard';
 
 const TheKaiyaStandard = () => {
     return (
@@ -35,6 +36,7 @@ const TheKaiyaStandard = () => {
 
 
             </div>
+            
         </section>
     );
 };

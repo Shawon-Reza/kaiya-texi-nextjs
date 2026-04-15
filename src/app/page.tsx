@@ -12,6 +12,8 @@ import ServicesPage2 from "@/components/landing/ServicesPage2";
 import GlobalCoverage from "@/components/landing/GlobalCoverage";
 import PopularDestination from "@/components/landing/PopularDestination";
 import DownloadApp from "@/components/landing/DownloadApp";
+import TypesOfCars from "@/components/landing/TypesOfCars";
+import CarStandard from '../components/landing/CarStandard';
 
 export default function Home() {
   return (
@@ -22,15 +24,21 @@ export default function Home() {
         <HowItWorks />
       </section>
 
-      <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
+      {/* <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
         <Services />
-      </section>
+      </section> */}
       <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 ">
         <ServicesPage2 />
       </section>
 
-      <section id="about">
+      {/* <section id="about">
         <TheKaiyaStandard />
+      </section> */}
+      <section id="car-standard" className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
+        <CarStandard />
+      </section>
+      <section id="types-of-cars" className="">
+        <TypesOfCars />
       </section>
       <section className="px-1 sm:px-5 md:px-8 lg:px-10 xl:px-13 2xl:px-15  dark:bg-zinc-950 py-5 md:py-8 lg:py-10 xl:py-15">
         <GlobalCoverage />
@@ -50,9 +58,9 @@ export default function Home() {
       <section>
         <JoinNow />
       </section>
-      <section>
+      {/* <section>
         <DownloadApp />
-      </section>
+      </section> */}
       <section>
         <Footer />
       </section>

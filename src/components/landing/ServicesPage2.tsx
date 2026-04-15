@@ -12,7 +12,7 @@ export default function ServicesPage2() {
                     </h2>
                 </header>
 
-                <div className="mt-6 grid grid-cols-1 gap-10 sm:mt-8 sm:grid-cols-2 sm:gap-3 sm:px-10 lg:grid-cols-4 xl:grid-cols-4">
+                <div className="mt-6 grid grid-cols-1 gap-10 sm:mt-8 sm:grid-cols-2 sm:gap-3 lg:gap-4 sm:px-10 lg:grid-cols-4 xl:grid-cols-4  mx-auto">
                     {servicesPage2Items.map((item) => (
                         <ServicesPage2Card key={item.id} item={item} />
                     ))}
