@@ -11,6 +11,7 @@ import TheKaiyaStandard from "@/components/landing/TheKaiyaStandard";
 import ServicesPage2 from "@/components/landing/ServicesPage2";
 import GlobalCoverage from "@/components/landing/GlobalCoverage";
 import PopularDestination from "@/components/landing/PopularDestination";
+import DownloadApp from "@/components/landing/DownloadApp";
 
 export default function Home() {
   return (
@@ -48,6 +49,9 @@ export default function Home() {
       </section>
       <section>
         <JoinNow />
+      </section>
+      <section>
+        <DownloadApp />
       </section>
       <section>
         <Footer />
